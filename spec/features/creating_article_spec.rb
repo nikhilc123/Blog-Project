@@ -4,6 +4,7 @@ require 'rails_helper'
       visit "/"
       
       click_link "New Article"
+      
       fill_in "Title", with: "Creating a first article"
       fill_in "Body", with: "Lorem ipsum"
       click_button "Create Article"
