@@ -4,8 +4,8 @@ require 'rails_helper'
       visit "/"
       
       click_link "New Article"
-      fill_in "title", with: "Creating a first article"
-      fill_in "body", with: "Lorem ipsum"
+      fill_in "Title", with: "Creating a first article"
+      fill_in "Body", with: "Lorem ipsum"
       click_button "Create Article"
       
       expect(page).to have_content("Article has been created")
