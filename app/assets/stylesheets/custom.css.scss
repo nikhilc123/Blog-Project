@@ -10,3 +10,21 @@ body {
 #submit {
   margin-right: -75px;
 }
+
+.article-body, .article-title {
+  padding-left: 0.7em;
+}
+
+.article-title {
+  font-weight: bold ;
+  font-size: 2.5em;
+  margin-bottom: 0.8em;
+}
+
+.article-body {
+  font-size: 1.5em;
+}
+
+#new-article-btn {
+  margin-bottom: 10px;
+}
