@@ -22,6 +22,13 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><%= link_to "Authors", "#" %></li>
+        <% if user_signed_in? %>
+        <div class="navbar-right">
+          <p class="navbar-text"></p>
+            Signed in as <%= "#{current_user.email}" %>
+          </p>
+        </div>
+        <% end %>
         <li><%= link_to "Sign Up", new_user_registration_path %></li>
       </ul>
     </div>
