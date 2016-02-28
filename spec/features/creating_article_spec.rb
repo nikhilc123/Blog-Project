@@ -2,8 +2,10 @@ require 'rails_helper'
   RSpec.feature "Creating Article spec" do
     before do
       @nik = User.create!(email: "nik@gmail.com", password: "password")
+      
     end
     scenario "A user creates a new article" do
+      login_as(@nik)
       visit "/"
       
       click_link "New Article"
@@ -17,6 +19,7 @@ require 'rails_helper'
     end
     
     scenario "A user fails to create a new article" do
+      login_as(@nik)
       visit "/"
       
       click_link "New Article"
